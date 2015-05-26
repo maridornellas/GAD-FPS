@@ -7,4 +7,10 @@ public abstract class Weapon : MonoBehaviour
 	public float range;
 		
 	public abstract void Fire();
+
+	public virtual void Update()
+	{
+
+	}
+
 }

@@ -28,6 +28,7 @@ public class ZombieController : MonoBehaviour
 
 	void Update()
 	{
+		//Debug.Log (state.ToString());
 		switch (state)
 		{
 		case State.Idle:
@@ -105,11 +106,14 @@ public class ZombieController : MonoBehaviour
 			animator.SetBool("TargetSpotted", false);
 		}
 	}
+
 	void UpdateDamage()
 	{
 	}
+
 	void UpdateDead()
 	{
+		Debug.Log ("Dead");
 	}
 
 	public void OnAttackEvent()
